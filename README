@@ -16,6 +16,6 @@ run
     * backup servers farm
     * unix domain socket 
 
-fix some bugs
+ fix some bugs
 1 block when the backend memcached down
 2 ketama arithmetic  wrong
