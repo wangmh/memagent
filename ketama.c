@@ -352,7 +352,8 @@ static void ketama_md5_digest( const char* in, unsigned char md5pword[16] )
 
 static unsigned int ketama_hashi( const char* inString )
 {
-	unsigned char digest[16], ret;
+	unsigned char digest[16];
+	unsigned int ret;
 	ketama_md5_digest( inString, digest );
 	ret = ( digest[3] << 24 )
 						| ( digest[2] << 16 )
