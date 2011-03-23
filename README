@@ -1,1 +1,21 @@
-memagent is a proxy for memcached
+magent is a simple but useful proxy program for memcached servers. 
+see  http://code.google.com/p/memagent/
+run
+
+./magent -c ./conf/magent.conf
+
+    * keeps connections to memcached servers
+    * supports following memcached commands
+         1. get gets
+         2. delete
+         3. incr decr
+         4. add set replace prepend append
+         5. cas 
+    * event-driven by using libevent library
+    * supports ketama algorithm
+    * backup servers farm
+    * unix domain socket 
+
+fix some bugs
+1、 block when the backend memcached down。
+2、 ketama arithmetic  wrong
